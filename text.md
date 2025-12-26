@@ -1,6 +1,7 @@
 State Management & Data Fetching
 Use the useState and useEffect hooks to fetch and display data from the API.
 Your application should manage loading and error states gracefully, displaying appropriate UI indicators to the user (e.g., a loading spinner, an error message).
+
 2. Custom Hooks
 You must create and implement at least two custom hooks:
 
@@ -48,3 +49,9 @@ List all categories: https://www.themealdb.com/api/json/v1/1/categories.php
 Filter by category: https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 Lookup full recipe details by ID: https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772
 Search meal by name: https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+
+idMeal
+strMeal
+strArea
+strInstructions
+strMealThumb
