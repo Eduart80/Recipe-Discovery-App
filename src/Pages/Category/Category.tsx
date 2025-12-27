@@ -29,12 +29,14 @@ useEffect(() => {
 
   return (
     <>
+    <h3>Recipe of {strCategory} category</h3>
+    <p>Bon appétit!</p>
     {loading ? 
     (<Spinner />) :
     (<div className='category-grid'>
           {dataCategory.map((category: any) => (
-            <Link key={`/category/${category.strCategory}`} 
-            to={`/category/${category.strCategory}`}>
+            <Link key={category.idMeal}
+             to={`/recipe/${category.idMeal}`}>
               <CategoryCard {...category}/>
             </Link>
           ))}

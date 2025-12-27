@@ -1,0 +1,7 @@
+#ingredient-recip {
+  display: block !important;
+  list-style: disc;
+  width: auto;
+  justify-content: unset;
+  padding-left: 2rem;
+}

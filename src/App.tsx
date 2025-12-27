@@ -19,7 +19,7 @@ function App() {
         <Route path='/category' element={<Category />}/>
         <Route path='/category/:strCategory' element={<Category />}/>
         <Route path='/favorites' element={<Favorites />}/>
-        <Route path='/recipe' element={<Recipe />}/>
+        <Route path='/recipe/:idMeal' element={<Recipe />}/>
         <Route path='/*' element={<NotFound />}/>
       </Routes>
     </>
