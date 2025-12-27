@@ -5,6 +5,7 @@ import BackButton from '../../Components/BackButton/BackButton';
 import {fetchAllRecipes} from '../../API/RecipeApi'
 import HomeCard from '../../Components/RecipeCard/HomeCard';
 import './home.css'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     const [loading, setLoading] = useState(true)
@@ -28,12 +29,13 @@ export default function Home() {
              (<Spinner />)
             :(<div className='category-grid'>
               {data.map((category: any) => (
-                <HomeCard key={category.idCategory} {...category} />
+               <Link key={category.idCategory} to={`/category/${category.strCategory}`}>
+                <HomeCard {...category} />
+                </Link>
               ))}
             </div>) 
             }
         </div>
-    <BackButton/>
     </>
   )
 }
