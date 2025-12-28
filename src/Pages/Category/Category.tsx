@@ -11,6 +11,11 @@ export default function Category() {
  const [dataCategory, setDataCategory] =useState([])
  const [loading, setLoading]=useState(true)
 
+ useEffect(() => {
+         const timer = setTimeout(() => setLoading(false), 2000)
+         return () => clearTimeout(timer);
+     }, [])
+
 useEffect(() => {
   if (strCategory) {
     const fetchData = async () => {

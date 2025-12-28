@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import BackButton from '../../Components/BackButton/BackButton'
 import { fetchRecipesById } from '../../API/RecipeApi'
 import Spinner from '../../Components/Spinner/Spinner'
+import RecipeLike from '../../Components/RecipeCard/RecipeLike'
 
 export default function Recipe() {
   const { idMeal } = useParams<{idMeal?: string}>()
@@ -28,7 +29,12 @@ export default function Recipe() {
       {loading ? (
         <Spinner/>) : (
           <div className='recipe' style={{width:'90%'}}>
+            <div>
             <h2>{recipe.strMeal}</h2>
+            <RecipeLike
+              idMeal={recipe.idMeal}
+            />
+            </div>
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
             <p>{recipe.strInstructions}</p>
             <h4>Ingredients:</h4>
