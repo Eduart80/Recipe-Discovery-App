@@ -6,6 +6,7 @@ export default function NotFound() {
     <div>
         <h1>Error</h1>
     <p>404 - link not found</p>
+    <hr />
     <BackButton/>
     </div>
   )

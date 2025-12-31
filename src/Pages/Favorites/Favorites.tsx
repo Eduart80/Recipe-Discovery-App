@@ -90,6 +90,7 @@ export default function Favorites() {
           )
         )}
       </div>
+      <hr />
       <BackButton />
     </>
   );

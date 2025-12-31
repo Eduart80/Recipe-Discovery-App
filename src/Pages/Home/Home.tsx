@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Spinner from '../../Components/Spinner/Spinner';
-import BackButton from '../../Components/BackButton/BackButton';
 import {fetchAllRecipes} from '../../API/RecipeApi'
 import HomeCard from '../../Components/RecipeCard/HomeCard';
 import './home.css'
@@ -15,6 +14,7 @@ export default function Home() {
         const timer = setTimeout(() => setLoading(false), 2000)
         return () => clearTimeout(timer);
     }, [])
+
     useEffect(()=>{
       fetchAllRecipes()
       .then(res => setData(res.categories || []))

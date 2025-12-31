@@ -57,6 +57,7 @@ export default function Recipe() {
         )
       }
     </div>
+    <hr />
     <BackButton />
     </>
   )

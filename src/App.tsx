@@ -7,6 +7,7 @@ import Favorites from './Pages/Favorites/Favorites'
 import Recipe from './Pages/Recipe/Recipe'
 import NotFound from './Pages/NotFound/NotFound'
 import NavBar from './Components/NavBar/NavBar'
+import SearchResults from './Pages/Search/SearchResults'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <Route path='/category/:strCategory' element={<Category />}/>
         <Route path='/favorites' element={<Favorites />}/>
         <Route path='/recipe/:idMeal' element={<Recipe />}/>
+        <Route path='/search' element={<SearchResults />}/>
         <Route path='/*' element={<NotFound />}/>
       </Routes>
     </>

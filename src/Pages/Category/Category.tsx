@@ -15,7 +15,7 @@ export default function Category() {
          const timer = setTimeout(() => setLoading(false), 2000)
          return () => clearTimeout(timer);
      }, [])
-
+//use effect on porpouse split in 2
 useEffect(() => {
   if (strCategory) {
     const fetchData = async () => {
@@ -46,6 +46,7 @@ useEffect(() => {
             </Link>
           ))}
       </div>) }
+      <hr />
     <BackButton />
     </>
   )

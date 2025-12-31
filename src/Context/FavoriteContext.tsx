@@ -1,7 +1,6 @@
 import React, { createContext, useContext } from "react";
 import type { ReactNode } from "react";
 import type { FavoriteContextType } from "../types/types"
-// Adjust the import path for your useLocalStorage hook as needed
 import useLocalStorage from "../utils/localStorage";
 
 const FavoritesContext = createContext<FavoriteContextType | undefined>(undefined)
