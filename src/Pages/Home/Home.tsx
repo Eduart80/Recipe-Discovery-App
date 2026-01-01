@@ -10,11 +10,6 @@ export default function Home() {
     const [loading, setLoading] = useState(true)
     const [data, setData]=useState([])
 
-    useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 2000)
-        return () => clearTimeout(timer);
-    }, [])
-
     useEffect(()=>{
       fetchAllRecipes()
       .then(res => setData(res.categories || []))

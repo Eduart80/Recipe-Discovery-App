@@ -47,10 +47,6 @@ export default function Favorites() {
   }
 }, [favoriteIds]);
     
-      useEffect(()=>{
-        const timer = setTimeout(() => setLoading(false), 2000)
-        return () => clearTimeout(timer);
-    },[favoriteIds])
   return (
     <>
       <div>

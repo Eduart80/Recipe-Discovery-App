@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useFavorites } from "../../Context/FavoriteContext"
-import "./HomeCard.css";
-import Spinner from "../Spinner/Spinner";
-import BackButton from "../BackButton/BackButton";
+import "./HomeCard.css"
 
 interface RecipeCardProps {
   idMeal: string
